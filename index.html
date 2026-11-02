@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyMate - University Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>StudyMate</h1>
+        <p>Your personal university learning companion</p>
+    </header>
+
+    <main>
+
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <h2>Welcome to StudyMate</h2>
+            <p>Learn smarter. Study better. Achieve more.</p>
+        </section>
+
+        <!-- Search Section -->
+        <section class="card">
+            <h2>Search for a Topic</h2>
+
+            <input
+                type="search"
+                id="topicSearch"
+                placeholder="Search courses or topics..."
+            >
+
+            <div id="searchResults"></div>
+        </section>
+
+        <!-- Course Library -->
+        <section class="card">
+            <h2>University Course Library</h2>
+            <p>Select a course to explore its topics.</p>
+
+            <div id="courses"></div>
+        </section>
+
+        <!-- Learning Area -->
+      <!-- StudyMate AI Tutor -->
+<section class="card" id="aiTutor">
+    <h2>StudyMate AI Tutor</h2>
+    <p>Ask questions about any university subject.</p>
+
+    <select id="courseSelect">
+        <option value="">Choose your course</option>
+        <option>IFT</option>
+        <option>MTH 101</option>
+        <option>PHY 101</option>
+        <option>STA 111</option>
+        <option>GST 111</option>
+    </select>
+
+    <div id="chatMessages">
+        <p>Welcome! Ask me a question about your studies.</p>
+    </div>
+
+    <textarea
+        id="userQuestion"
+        placeholder="Type your question here..."
+        rows="4">
+    </textarea>
+
+    <button id="sendQuestion">Send Question</button>
+</section>
+        <section class="card" id="learningArea">
+            <h2>Learning Materials</h2>
+            <div id="topicContent">
+                <p>Select a topic to start learning.</p>
+            </div>
+        </section>
+
+        <!-- Save Topics -->
+        <section class="card">
+            <h2>My Saved Topics</h2>
+            <div id="savedTopics">
+                <p>Your saved topics will appear here.</p>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section class="card">
+            <h2>Practice Quiz</h2>
+            <p>Test your knowledge and improve your understanding.</p>
+
+            <div id="quizArea">
+                <p>Select a topic to practise questions.</p>
+            </div>
+        </section>
+
+        <!-- Video Learning -->
+        <section class="card">
+            <h2>Video Learning</h2>
+            <p>Find educational videos for your topics.</p>
+
+            <input
+                type="search"
+                id="videoSearch"
+                placeholder="Enter a topic to find videos..."
+            >
+
+            <button id="searchVideos">Find Videos</button>
+
+            <div id="videoResults"></div>
+        </section>
+
+        <!-- Existing Study Tasks -->
+        <section class="card">
+            <h2>My Study Tasks</h2>
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a study task"
+            >
+
+            <button id="addTask">Add Task</button>
+
+            <ul id="taskList"></ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>StudyMate © 2026 - Learn Without Limits</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+header {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #cbd5e1;
+}
+
+main {
+    width: 92%;
+    max-width: 900px;
+    margin: 25px auto;
+}
+
+.welcome {
+    background: #2563eb;
+    color: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.welcome h2 {
+    margin-bottom: 8px;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+}
+
+.card h2 {
+    color: #1d4ed8;
+    margin-bottom: 12px;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin: 5px 3px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.course {
+    background: #eff6ff;
+    border-left: 4px solid #2563eb;
+    padding: 13px;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+
+.course h3 {
+    margin-bottom: 8px;
+}
+
+.topic-button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: white;
+    color: #1e293b;
+    border: 1px solid #dbeafe;
+    margin: 7px 0;
+}
+
+.topic-button:hover {
+    background: #dbeafe;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin: 10px 0;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete-btn {
+    background: #dc2626;
+}
+
+#topicContent, 
+#quizArea,
+#savedTopics,
+#searchResults,
+#videoResults {
+    margin-top: 15px;
+}
+
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 94%;
+    }
+
+    .card {
+        padding: 17px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+}
