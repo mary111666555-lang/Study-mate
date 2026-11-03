@@ -355,3 +355,45 @@ videoButton.addEventListener("click", function() {
 displayCourses();
 displaySavedTopics();
 displayTasks();
+const aiInput = document.getElementById("ai-input");
+const aiSend = document.getElementById("ai-send");
+const chatBox = document.getElementById("chat-box");
+
+aiSend.addEventListener("click", async () => {
+  const message = aiInput.value.trim();
+
+  if (!message) {
+    alert("Please enter a question.");
+    return;
+  }
+
+  chatBox.innerHTML += `<p><strong>You:</strong> ${message}</p>`;
+  aiInput.value = "";
+
+  const loading = document.createElement("p");
+  loading.textContent = "StudyMate AI is thinking...";
+  chatBox.appendChild(loading);
+
+  try {
+    const response = await fetch("/api/chat", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ message })
+    });
+
+    const data = await response.json();
+    loading.remove();
+
+    const answer = document.createElement("p");
+    answer.textContent = response.ok
+      ? "StudyMate AI: " + data.reply
+      : "Error: " + (data.error || "Unable to get an answer.");
+
+    chatBox.appendChild(answer);
+
+  } catch (error) {
+    loading.textContent = "Connection error. Please try again.";
+  }
+});

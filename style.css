@@ -155,3 +155,39 @@ footer {
         font-size: 27px;
     }
 }
+#ai-assistant {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#ai-assistant h2 {
+  color: #2563eb;
+}
+
+#chat-box {
+  min-height: 100px;
+  max-height: 300px;
+  overflow-y: auto;
+  margin: 15px 0;
+  padding: 10px;
+  background: #f1f5f9;
+  border-radius: 8px;
+}
+
+#ai-input {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#ai-send {
+  padding: 12px 18px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
